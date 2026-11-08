@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d19">
+  <title>NEXORA SIGNAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">NEXORA<span> SIGNAL</span></div>
+    <div class="status">
+      <span class="dot"></span> Système actif
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <p class="small-title">MARKET ANALYSIS PLATFORM</p>
+      <h1>NEXORA SIGNAL</h1>
+      <p>Analyse intelligente des marchés financiers</p>
+    </section>
+
+    <section class="card">
+      <h2>Tableau de bord</h2>
+      <div class="info-grid">
+        <div class="info">
+          <span>Marché</span>
+          <strong>Forex</strong>
+        </div>
+        <div class="info">
+          <span>Intervalle</span>
+          <strong>1 minute</strong>
+        </div>
+        <div class="info">
+          <span>Mode</span>
+          <strong>Démo</strong>
+        </div>
+        <div class="info">
+          <span>Connexion</span>
+          <strong id="connection">En attente</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Sélection du marché</h2>
+      <select id="market">
+        <option value="EUR/USD">EUR/USD</option>
+        <option value="GBP/USD">GBP/USD</option>
+        <option value="USD/JPY">USD/JPY</option>
+        <option value="AUD/USD">AUD/USD</option>
+        <option value="USD/CAD">USD/CAD</option>
+      </select>
+
+      <button id="analyze">Actualiser l'analyse</button>
+      <p id="message">
+        En attente de données de marché.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Informations du marché</h2>
+      <div class="market-display">
+        <span>Marché sélectionné</span>
+        <strong id="selectedMarket">EUR/USD</strong>
+        <span id="clock">--:--:--</span>
+      </div>
+      <div class="notice">
+        Les données de marché doivent être connectées
+        à une source externe avant toute analyse.
+        Aucun signal fictif n'est affiché.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Historique des analyses</h2>
+      <div id="history">
+        Aucune analyse disponible.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    NEXORA SIGNAL © 2026
+    <p>Plateforme éducative d'analyse financière.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
